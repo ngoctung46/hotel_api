@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res, next) => {
+    console.log("POST");
     let newRoom = new room({
         name: req.body.name,
         description: req.body.description,
