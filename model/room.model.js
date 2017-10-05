@@ -9,6 +9,7 @@ const RoomSchema = mongoose.Schema({
     type: { type: String, required: true, enum: ['Single', 'Double'] },
     status: { type: String, required: true, enum: ['Available', 'Occupied', 'Dirty', 'CustomerOut', 'Booked', 'Broken'] },
     rate: Number,
+    timeStamp: { type: Date, default: Date.now},
     orderId: ObjectId,
     customerId: ObjectId
 });

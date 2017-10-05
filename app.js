@@ -5,6 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./config/database');
 const roomController = require('./controller/room.controller'); 
+const customerController = require('./controller/customer.controller');
 
 // Connect mongoose to db
 mongoose.connect(config.database, { useMongoClient: true });
@@ -29,6 +30,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/room/', roomController);
+app.use('/api/customer/', customerController);
 // app.use('**', (req, res) => {
 //     res.sendFile(__dirname + '/public/index.html');
 // });
