@@ -1,0 +1,12 @@
+{"_id":{"$oid":"59e36dca8f72f71c94e4223f"},"name":"102","description":"Single Bed Room","rate":300000,"type":"0","status":"1","timeStamp":{"$date":"2017-10-15T14:45:28.118Z"},"__v":0,"orderId":"59e36e528f72f71c94e4224c","customerId":""}
+{"_id":{"$oid":"59e36dd18f72f71c94e42240"},"name":"103","description":"Single Bed Room","rate":300000,"type":"0","status":"1","timeStamp":{"$date":"2017-10-15T14:45:23.546Z"},"__v":0,"orderId":"59e36ebd8f72f71c94e4224d","customerId":""}
+{"_id":{"$oid":"59e36dd48f72f71c94e42241"},"name":"104","description":"Single Bed Room","rate":300000,"type":"0","status":"1","timeStamp":{"$date":"2017-10-15T14:45:32.947Z"},"__v":0,"orderId":"59e36f2a8f72f71c94e4224e","customerId":""}
+{"_id":{"$oid":"59e36dd88f72f71c94e42242"},"name":"202","description":"Single Bed Room","rate":300000,"type":"Single","status":"Available","timeStamp":{"$date":"2017-10-15T14:16:56.889Z"},"__v":0}
+{"_id":{"$oid":"59e36ddb8f72f71c94e42243"},"name":"203","description":"Single Bed Room","rate":300000,"type":"Single","status":"Available","timeStamp":{"$date":"2017-10-15T14:16:59.897Z"},"__v":0}
+{"_id":{"$oid":"59e36de08f72f71c94e42244"},"name":"204","description":"Single Bed Room","rate":300000,"type":"Single","status":"Available","timeStamp":{"$date":"2017-10-15T14:17:04.856Z"},"__v":0}
+{"_id":{"$oid":"59e36de58f72f71c94e42245"},"name":"302","description":"Single Bed Room","rate":300000,"type":"Single","status":"Available","timeStamp":{"$date":"2017-10-15T14:17:09.936Z"},"__v":0}
+{"_id":{"$oid":"59e36de98f72f71c94e42246"},"name":"303","description":"Single Bed Room","rate":300000,"type":"Single","status":"Available","timeStamp":{"$date":"2017-10-15T14:17:13.056Z"},"__v":0}
+{"_id":{"$oid":"59e36deb8f72f71c94e42247"},"name":"304","description":"Single Bed Room","rate":300000,"type":"Single","status":"Available","timeStamp":{"$date":"2017-10-15T14:17:15.991Z"},"__v":0}
+{"_id":{"$oid":"59e36e038f72f71c94e42248"},"name":"101","description":"Double Bed Room","rate":400000,"type":"Double","status":"Available","timeStamp":{"$date":"2017-10-15T14:17:39.002Z"},"__v":0}
+{"_id":{"$oid":"59e36e068f72f71c94e42249"},"name":"201","description":"Double Bed Room","rate":400000,"type":"Double","status":"Available","timeStamp":{"$date":"2017-10-15T14:17:42.630Z"},"__v":0}
+{"_id":{"$oid":"59e36e0a8f72f71c94e4224a"},"name":"301","description":"Double Bed Room","rate":400000,"type":"Double","status":"Available","timeStamp":{"$date":"2017-10-15T14:17:46.421Z"},"__v":0}

@@ -5,7 +5,7 @@ const customer = require('../model/customer.model');
 router.get('/', (req, res) => {
     customer.getAllCustomers((err, customers) => {
         if(err) {
-            res.json({success: false, message: `Failed to load all customers. Error: ${err}`});
+            res.json({success: true, message: `Updated successfully`});
         } else {
             res.write(JSON.stringify({ success: true, data: customers }));
             res.end();
@@ -27,23 +27,25 @@ router.post('/', (req, res, next) => {
         addressLine2: req.body.addressLine2,
         city: req.body.city,
         country: req.body.country,
+        checkInDate: req.body.checkInDate,
+        checkOutDate: req.body.checkOutDate
     });
 
     customer.addCustomer(newCustomer, (err, customer) => {
         if(err){
             res.json({success: false, message: `Failed to add new customer. Error: ${err}`});
         } else {
-            res.json({success: true, message: `Added new customer successfully`});
+            res.json({success: true, _id: customer._id});
         }
     });
 });
 
 router.delete('/:id', (req, res, next) => {
     let id = req.params.id;
-    customer.deleteCustomerById(id, (err, room) => {
+    customer.deleteCustomerById(id, (err, customer) => {
         if(err){
             res.json({success: false, message: `Failed to delete customer. Error: ${err}`});
-        } else if (room) {
+        } else if (customer) {
             res.json({success: true, message: `Deleted successfully`});
         } else {
             res.json({success: false});
@@ -65,13 +67,15 @@ router.put('/:id', (req, res, next) => {
         addressLine1: req.body.addressLine1,
         addressLine2: req.body.addressLine2,
         city: req.body.city,
-        country: req.body.country
+        country: req.body.country,
+        checkInDate: req.body.checkInDate,
+        checkOutDate: req.body.checkOutDate
     });
     customer.updateCustomerById(id, updateCustomer, (err, customer) => {
         if(err){
             res.json({success: false, message: `Failed to update customer. Error: ${err}`});
-        } else if (room) {
-            res.json({success: true, message: `Updated successfully`});
+        } else if (customer) {
+            res.json({success: true, _id: customer._id});
         } else {
             res.json({success: false});
         }

@@ -29,7 +29,7 @@ router.post('/', (req, res, next) => {
         if(err){
             res.json({success: false, message: `Failed to add new room. Error: ${err}`});
         } else {
-            res.json({success: true, message: `Added new room successfully`});
+            res.json({success: true, _id: room._id});
         }
     });
 });

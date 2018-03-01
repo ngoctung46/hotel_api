@@ -6,12 +6,12 @@ const ObjectId = mongoose.Schema.ObjectId;
 const RoomSchema = mongoose.Schema({
     name: { type: String, required: true },
     description: String,
-    type: { type: String, required: true, enum: ['Single', 'Double'] },
-    status: { type: String, required: true, enum: ['Available', 'Occupied', 'Dirty', 'CustomerOut', 'Booked', 'Broken'] },
+    type: { type: String, required: true},
+    status: { type: String, required: true },
     rate: Number,
     timeStamp: { type: Date, default: Date.now},
-    orderId: ObjectId,
-    customerId: ObjectId
+    orderId: String,
+    customerId: String
 });
 
 const Room = module.exports = mongoose.model('Room', RoomSchema);

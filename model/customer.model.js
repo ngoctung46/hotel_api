@@ -13,9 +13,11 @@ const CustomerSchema = mongoose.Schema({
     addressLine1: String,
     addressLine2: String,
     city: String,
-    country: String,   
+    country: String,
+    checkInDate: Date,
+    checkOutDate: Date,   
     timeStamp: { type: Date, default: Date.now},
-    orderId: ObjectId
+    orderId: String
 });
 
 const Customer = module.exports = mongoose.model('Customer', CustomerSchema);
